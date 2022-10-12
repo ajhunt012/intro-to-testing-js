@@ -37,3 +37,19 @@ describe('sayHello', function(){
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+describe('isFive', function(){
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return the boolean "true" when executed', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return the boolean "true" when executed', function() {
+        expect(isFive('5')).toBe(true);
+    });
+    it('should return the boolean "false" when executed', function() {
+        expect(isFive(true)).toBe(false);
+    });it('should return the boolean "false" when executed', function() {
+        expect(isFive(null)).toBe(false);
+    });
+});
