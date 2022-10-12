@@ -18,3 +18,18 @@ function isFive(input) {
         return false;
     }
 }
+function isEven(number) {
+    if (parseFloat(number) % 2 === 0){
+        return true;
+} else {
+        return false;
+    }
+}
+let array = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+function isVowel (vowel) {
+    if (vowel !== (array.indexOf())) {
+        return false;
+    } else {
+        return true;
+    }
+}
