@@ -25,11 +25,15 @@ function isEven(number) {
         return false;
     }
 }
-let array = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+//Lesson from -
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+
+const vowelArray = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 function isVowel (vowel) {
-    if (vowel !== (array.indexOf())) {
-        return false;
-    } else {
+    if ( -1 !== vowelArray.indexOf(vowel)) {
         return true;
+    } else {
+        return false;
     }
 }
